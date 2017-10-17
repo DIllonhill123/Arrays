@@ -1,0 +1,6 @@
+c:\users\eahscs\documents\visual studio 2017\Projects\MinMax\MinMax\bin\Debug\MinMax.exe.config
+c:\users\eahscs\documents\visual studio 2017\Projects\MinMax\MinMax\bin\Debug\MinMax.exe
+c:\users\eahscs\documents\visual studio 2017\Projects\MinMax\MinMax\bin\Debug\MinMax.pdb
+c:\users\eahscs\documents\visual studio 2017\Projects\MinMax\MinMax\obj\Debug\MinMax.csprojResolveAssemblyReference.cache
+c:\users\eahscs\documents\visual studio 2017\Projects\MinMax\MinMax\obj\Debug\MinMax.exe
+c:\users\eahscs\documents\visual studio 2017\Projects\MinMax\MinMax\obj\Debug\MinMax.pdb
