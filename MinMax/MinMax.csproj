@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA609C0C-A9C6-495D-9668-33069AC4FD5D}</ProjectGuid>
+    <ProjectGuid>{D37C4079-96E2-446A-8664-51F22C237060}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>MinMax</RootNamespace>
     <AssemblyName>MinMax</AssemblyName>
@@ -42,9 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\GitHub\Arrays\Program.cs">
-      <Link>Program.cs</Link>
-    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

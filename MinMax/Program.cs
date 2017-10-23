@@ -10,29 +10,36 @@ namespace MinMax
     {
         static void Main(string[] args)
         {
-            int[] Arr = new int[5000];
+            int[] arr = new int[50];
             Random rnd = new Random();
-            int Max = 0;
-            int almostMax = 0;
-            for(int i =0; i< Arr.Length; i++)
+            int count = 0;
+            int min;
+            int max;
+            for (int i = 0; i < arr.Length; i++)
             {
-                Arr[i] = rnd.Next(1, 1000000);
+                arr[i] = rnd.Next(1, 50);
             }
-            for(int i = 0; i < Arr.Length; i++)
+            for (int i = 0; i < 5; i++)
             {
-                for(int j = i + 1; j < Arr.Length; j++)
+                int[] arr2 = new int[10];
+                for (int j = 0; j < 10; j++)
                 {
-                    if (Arr[i] > Arr[j])
-                    {
-                        if (Arr[i] > Arr[j] && Arr[i] > almostMax)
-                        {
-                            Max = Arr[i];
-                        }
-                    }
+                    arr2[j] = arr[j + count];
                 }
+                Array.Sort(arr2);
+                for (int l = 0; l < arr2.Length; l++)
+                {
+                    Console.Write(arr2[l] + ",");
+                }
+                Console.WriteLine();
+                count += 10;
             }
-            Console.WriteLine("Max:" + Max);
-            Console.WriteLine("Second Greatest:" + almostMax); 
+            Array.Sort(arr);
+            max = arr[49];
+            min = arr[0];
+            Console.WriteLine("Min: " + min);
+            Console.WriteLine("Max: " + max);
+
         }
     }
 }
