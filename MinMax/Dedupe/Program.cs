@@ -12,13 +12,34 @@ namespace Dedupe
         {
             int[] arr = new int[5000];
             Random rnd = new Random();
-            int count = 0;
+            //int count = 0;
+            int k = 0;
             for(int i = 0; i < arr.Length; i++)
             {
                 arr[i] = rnd.Next(1, 50);
             }
             Array.Sort(arr);
-            for(int i = 0; i < arr.Length; i++)
+
+            for(int i = 1; i < arr.Length; i++)
+            {
+                if(arr[i] != arr[k])
+                {
+                    k++;
+                    arr[k] = arr[i];
+                }
+                if (i != k)
+                    arr[i] = -1;
+
+            }
+            k--;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + ", ");
+            }
+            Console.WriteLine("Length: " + k);
+
+            /*for(int i = 0; i < arr.Length; i++)
             {
                 for(int j = i + 1; j < arr.Length; j++)
                 {
@@ -41,8 +62,7 @@ namespace Dedupe
                 }
                 Console.Write(arr[i] + ", ");
             }
-
-            Console.WriteLine("Length: " + count);
+            Console.WriteLine("Length: " + count);*/
         }
     }
 }
